@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Pixwell\LaravelAdyen;
 
 use Illuminate\Support\ServiceProvider;
 use \Adyen\Client as AdyenClient;
@@ -26,7 +26,7 @@ class AdyenServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/adyen.php' => config_path('adyen.php'),
-        ]);
+        ], 'config');
 
         $this->app->bind(AdyenClient::class, function () {
             $config = $this->app['config']['adyen'];
