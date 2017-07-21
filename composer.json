@@ -1,0 +1,12 @@
+{
+    "name": "pixwell-dev/laravel-adyen",
+    "require": {
+        "adyen/php-api-library": "^1.2"
+    },
+    "authors": [
+        {
+            "name": "Jozef Balún",
+            "email": "jozef.balun@pixwell.sk"
+        }
+    ]
+}
