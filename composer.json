@@ -1,12 +1,42 @@
 {
     "name": "pixwell-dev/laravel-adyen",
+    "description": "Bridge for adyen php api",
+    "license": "MIT",
     "require": {
-        "adyen/php-api-library": "^1.2"
+        "php" : ">=7.0",
+        "adyen/php-api-library": "^1.2",
+        "illuminate/support": "~5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pixwell\\LaravelAdyen\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pixwell\\LaravelAdyen\\Test\\": "tests"
+        }
     },
     "authors": [
         {
             "name": "Jozef Balún",
             "email": "jozef.balun@pixwell.sk"
         }
-    ]
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pixwell\\LaravelAdyen\\AdyenServiceProvider"
+            ]
+        }
+    }
 }
