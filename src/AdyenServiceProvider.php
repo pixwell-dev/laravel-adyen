@@ -3,7 +3,7 @@
 namespace Pixwell\LaravelAdyen;
 
 use Illuminate\Support\ServiceProvider;
-use \Adyen\Client as AdyenClient;
+use Adyen\Client as AdyenClient;
 use Adyen\Config;
 
 class AdyenServiceProvider extends ServiceProvider
