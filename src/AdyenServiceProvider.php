@@ -37,7 +37,6 @@ class AdyenServiceProvider extends ServiceProvider
 
             return $client;
         });
-
     }
 
 
